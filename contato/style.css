@@ -59,6 +59,7 @@ body {
     margin-right: 16px;
 }
 
+
 #Loja{
     width: 78px;
     height: 53px;
@@ -85,6 +86,11 @@ body {
         font-size: 1.8em; /* Reduz o tamanho da mensagem de boas-vindas */
     }
 
+    .link-section {
+        width: 100%;
+        max-width: 370px;
+    }
+    
     .link {
         font-size: 1em; /* Reduz o tamanho do texto dos links */
         padding: 12px; /* Ajusta o espaçamento dos links */
@@ -95,12 +101,19 @@ body {
         height: 35px;
         margin-right: 13px;
     }
-    #Loja{
-        width: 80px;
-    }
+    
+    
+#Loja{
+    width: 65px;
+    height: 40px;
+}
+
+#inst{
+    margin-left: -33px;
+}
     
 
     .footer {
-        font-size: 0.8em; /* Reduz o tamanho do texto do rodapé */
+        font-size: 0.7em; /* Reduz o tamanho do texto do rodapé */
     }
 }
