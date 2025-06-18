@@ -4,7 +4,6 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 body {
     font-family: Arial, sans-serif;
     background-color: #000000;
@@ -24,12 +23,10 @@ body {
     flex: 1;
     padding: 2rem 0;
 }
-
 .link-section {
     width: 100%;
     max-width: 500px;
 }
-
 .link {
     display: flex;
     align-items: center;
@@ -47,28 +44,67 @@ body {
     text-transform: uppercase;
     transition: background 0.3s, transform 0.2s;
 }
-
 .link:hover {
     background-color: #fcfdff;
     transform: scale(1.05);
 }
-
 .icon {
     width: 60px;
     height: 55px;
     margin-right: 16px;
 }
-
 #Loja{
     width: 78px;
     height: 53px;
 }
-
 #inst{
     margin-left: -22px;
     width: 78px;
     height: 53px;
 }
+
+
+/* Estilos para a faixa */
+
+.banner {
+    width: 100%;
+    height: 45px;
+    background-color: #b4c0b2;
+    color: rgb(0, 0, 0);
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 10px;
+}
+.marquee {
+    display: flex;
+    position: absolute;
+    height: 100%;
+    align-items: center;
+}
+.marquee-container {
+    display: flex;
+    animation: marquee 30s linear infinite;
+}
+.marquee-text {
+    white-space: nowrap;
+    flex-shrink: 0;
+    padding: 0 8px; /* Espaço entre os textos */
+}
+@keyframes marquee {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+}
+.marquee a {
+    color: #001aff;
+    font-weight: bold;
+    text-decoration: none;
+}
+.marquee a:hover {
+    text-decoration: underline;
+}
+
+
+
 
 /* Rodapé */
 .footer {
@@ -78,7 +114,6 @@ body {
     font-size: 0.9em;
     color: #aaa;
 }
-
 /* Responsividade para dispositivos móveis */
 @media (max-width: 600px) {
     .welcome-message {
@@ -113,6 +148,6 @@ body {
     
 
     .footer {
-        font-size: 0.7em; /* Reduz o tamanho do texto do rodapé */
+        font-size: 11px; /* Reduz o tamanho do texto do rodapé */
     }
 }
